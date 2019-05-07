@@ -102,10 +102,17 @@ a:link, a:visited {
 
 .examples {
     width: 300px;
+    margin: 0 auto;
 }
 
 h2 {
     width: 80%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
   /*      MEDIA QUERIES       */
