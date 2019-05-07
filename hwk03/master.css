@@ -7,7 +7,7 @@ a:link, a:visited {
     color: white;
 }
 
-#logo:hover {
+#logo:hover, #logo:active {
   cursor: pointer;
   animation: jello-horizontal 0.9s both; 
 }
@@ -84,7 +84,7 @@ a:link, a:visited {
       transition: opacity .75s ease-in;
     }
 
-    #cloud-2:hover  {
+    #cloud-2:hover, #cloud-2:active  {
       opacity: 1;
     }
 
@@ -95,7 +95,7 @@ a:link, a:visited {
       transform .75s ease-in;
     }
     
-    #cloud-1:hover  {
+    #cloud-1:hover, #cloud-1:active  {
       transform: translateX(0rem);
       opacity: 1;
     }
@@ -142,7 +142,7 @@ main {
   width: 100%;
 }
 
-#moon:hover .moon-crater{
+#moon:hover .moon-crater, #moon:active .moon-crater {
   fill:#fff;
   cursor: pointer;
 }
