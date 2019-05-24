@@ -127,7 +127,7 @@ a:link, a:visited {
     margin: 0 auto;
 }
 
-.examples:nth-of-type(4){
+.examples:nth-of-type(4), .examples:nth-of-type(3){
 border: 1px solid white;
 }
 
