@@ -48,7 +48,7 @@ body {
     background: rgb(55,9,111);
     background: linear-gradient(0deg, rgba(55,9,111,1) 0%, rgba(83,29,83,1) 49%, rgba(150,115,150,1) 100%);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     /* background-attachment: fixed; */
 }
