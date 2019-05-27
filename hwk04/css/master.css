@@ -25,7 +25,16 @@ h3 {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: .5625rem;
+    font-size: 1rem;
+}
+
+h2{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: .75rem;
 }
 
 #kehlani-logo {
@@ -54,12 +63,25 @@ body {
 .button {
     background-color: white;
     border-radius: 3rem;
-    padding: .5rem;
+    padding: .2rem .5rem;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
 }
 
 #mic {
     width: 0.875rem;
+    position: relative;
+    left: 9rem;
+    margin-top: .5rem;
 }
+
+#text_container {
+  display: flex;
+  margin: 0 auto;
+  width: 75vw;
+  flex-direction: column;
+}
+
 
 /*   ANIMATIONS     */
 
