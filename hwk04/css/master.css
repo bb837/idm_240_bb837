@@ -10,25 +10,7 @@ h1 {
     font-size: 0.9375rem;
 }
 
-h2, .button {
-    font-family: futura-pt, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.75rem;
-}
-
-.button {
-    color: #37096F; 
-}
-
-h3 {
-    font-family: futura-pt, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-}
-
-h2{
+h2 {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -37,16 +19,27 @@ h2{
   margin-bottom: .75rem;
 }
 
-#kehlani-logo {
-    width: 50vw;
-    height: auto;
-    margin: 0 auto;
+h2, .button {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+h3 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.625rem;
+    margin: .4rem .4rem;
+    display: inline-block;
 }
 
 a {
     text-decoration: none;
 }
 
+/*         CONTENT         */
 body {
     display: flex;
     flex-direction: column;
@@ -60,12 +53,8 @@ body {
     /* background-attachment: fixed; */
 }
 
-.button {
-    background-color: white;
-    border-radius: 3rem;
-    padding: .2rem .5rem;
-    margin-left: 1.5rem;
-    margin-top: .5rem;
+main {
+  position: relative;
 }
 
 #mic {
@@ -75,6 +64,12 @@ body {
     margin-top: .5rem;
 }
 
+#kehlani-logo {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+}
+
 #text_container {
   display: flex;
   margin: 0 auto;
@@ -82,6 +77,94 @@ body {
   flex-direction: column;
 }
 
+.button {
+    background-color: white;
+    border-radius: 3rem;
+    padding: .2rem .5rem;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+    color: #37096F; 
+}
+
+#portrait {
+  width: 473px;
+  height: 477px;
+  position: relative;
+  right: .5rem;
+}
+
+#www {
+  width: 180px;
+  height: 45px;
+  position: absolute;
+  z-index: 30;
+  bottom: 3rem;
+  left: 11.6rem;
+}
+
+footer {
+    background-color: #591D53;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.right-aligned {
+  text-align: right;
+  left: 7rem;
+  position: relative;
+}
+
+@media screen and (min-width: 48rem) {
+
+  #mic {
+    width: 1.5rem;
+    left: 22rem;
+  }
+
+  #kehlani-logo {
+    width: 13.97625rem;
+  }
+
+  h2, .button {
+    font-size: 1.25rem;
+  }
+
+  #button_container {
+    text-align: center;
+  }
+
+  .button {
+    padding: .4rem 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  a {
+    font-size: 1.25rem; 
+  }
+
+  #portrait {
+    width: 47.625rem;
+    height: 48rem;
+  }
+
+  #www {
+    width: 19.8125rem;
+    height: 4.9375rem;
+    left: 18rem;
+    bottom: 4rem;
+  }
+  
+  h3 {
+    font-size: .75rem;
+  }
+
+  .right-aligned {
+    left: 35rem;
+  }
+
+}
 
 /*   ANIMATIONS     */
 
@@ -156,9 +239,3 @@ body {
 
 
 
-footer {
-    background-color: #591D53;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
