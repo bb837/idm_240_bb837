@@ -1,6 +1,7 @@
 html {
     font-size: 100%;
     color: white;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -58,10 +59,17 @@ main {
 }
 
 #mic {
-    width: 0.875rem;
-    position: relative;
-    left: 9rem;
-    margin-top: .5rem;
+  width: 0.875rem;
+  position: relative;
+  left: 9rem;
+  margin-top: .5rem;
+}
+
+#mic-off {
+  width: .875rem;
+  position: absolute;
+  right: .3rem;
+  margin-top: 1.2rem;
 }
 
 #kehlani-logo {
@@ -107,6 +115,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+    z-index: 40;
 }
 
 .right-aligned {
@@ -120,6 +129,12 @@ footer {
   #mic {
     width: 1.5rem;
     left: 22rem;
+  }
+
+  #mic-off {
+    width: 1.5rem;
+    right: 1rem;
+    margin-top: 1.3rem;
   }
 
   #kehlani-logo {
@@ -170,6 +185,12 @@ footer {
   #mic {
     width: 2.0625rem;
     left: 76.4rem;
+  }
+
+  #mic-off {
+    width: 2.0625rem;
+    right: 1rem;
+    margin-top: 1.6rem;
   }
 
   #portrait {
