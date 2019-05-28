@@ -111,7 +111,7 @@ footer {
 
 .right-aligned {
   text-align: right;
-  left: 7rem;
+  left: 6.5rem;
   position: relative;
 }
 
@@ -161,7 +161,7 @@ footer {
   }
 
   .right-aligned {
-    left: 35rem;
+    left: 32rem;
   }
 
 }
@@ -175,27 +175,41 @@ footer {
   #portrait {
     width: 64.375rem;
     height: 64.875rem;
-    left: -1rem;
-    bottom: 12rem;
+    left: -2.5rem;
+    /*! bottom: 12rem; */
   }
 
   body {
     display: block;
+    max-width: 80rem;
+    margin: 0 auto;
+    position: relative;
   }
 
   #kehlani-logo {
     width: 22.9525rem;
     height: 14.963125rem;
     position: absolute;
-    right: 5rem;
-    top: 20rem;
+    right: 3rem;
+    top: 14rem;
   }
 
   #www {
     width: 25.0625rem;
     height: 6.25rem;
-    left: 25rem;
-   bottom: 19rem;
+    left: 24rem;
+   bottom: 9rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #text_container {
+    width: 22rem;
+    position: absolute;
+    right: 3rem;
+    top: 24rem;
   }
 }
 
