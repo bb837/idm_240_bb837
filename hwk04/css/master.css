@@ -166,6 +166,39 @@ footer {
 
 }
 
+@media screen and (min-width: 80rem) {
+  #mic {
+    width: 2.0625rem;
+    left: 76.4rem;
+  }
+
+  #portrait {
+    width: 64.375rem;
+    height: 64.875rem;
+    left: -1rem;
+    bottom: 12rem;
+  }
+
+  body {
+    display: block;
+  }
+
+  #kehlani-logo {
+    width: 22.9525rem;
+    height: 14.963125rem;
+    position: absolute;
+    right: 5rem;
+    top: 20rem;
+  }
+
+  #www {
+    width: 25.0625rem;
+    height: 6.25rem;
+    left: 25rem;
+   bottom: 19rem;
+  }
+}
+
 /*   ANIMATIONS     */
 
 .jello-horizontal {
