@@ -41,6 +41,12 @@ a {
 }
 
 /*         CONTENT         */
+
+#wrapper {
+margin: auto;
+max-width: 320px;
+}
+
 body {
     display: flex;
     flex-direction: column;

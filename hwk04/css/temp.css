@@ -1,0 +1,15 @@
+#wrapper {
+    margin: auto;
+    max-width: 320px;
+    }
+
+    body {
+        background-color: purple;
+    }
+
+    #mic {
+        width: 0.875rem;
+        position: relative;
+        left: 9rem;
+        margin-top: .5rem;
+      }
