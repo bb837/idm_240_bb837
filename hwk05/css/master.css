@@ -70,25 +70,25 @@ main {
   position: relative;
 }
 
-#mic {
-  width: 0.875rem;
-  position: relative;
-  left: 9rem;
+#mic_off, #mic_on {
+  width: 1.2rem;
+  position: absolute;
+  right: .5rem;
   margin-top: .5rem;
 }
 
-#mic-off {
-  width: .875rem;
-  position: absolute;
-  right: .3rem;
-  margin-top: 1.2rem;
+.hidden {
+  display: none ;
 }
 
 #kehlani-logo {
     width: 50vw;
     height: auto;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     animation: jello-horizontal 0.9s forwards;
+    left: 4.7rem;
+    position: relative;
+    top: 1rem;
 }
 
 #kehlani-logo:hover, #kehlani-logo:active {
@@ -122,7 +122,7 @@ main {
   width: 473px;
   height: 477px;
   position: relative;
-  right: .5rem;
+  right: 4.5rem;
 }
 
 #www {
@@ -131,14 +131,14 @@ main {
   position: absolute;
   z-index: 30;
   bottom: 3rem;
-  left: 11.6rem;
+  right: 1rem;
 }
 
 footer {
     background-color: #591D53;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: static;
+    /* bottom: 0; */
     z-index: 40;
 }
 
@@ -151,23 +151,21 @@ footer {
 @media screen and (min-width: 48rem) {
 
   #wrapper {
-    margin: auto;
-    max-width: 768px;
+    min-height: 100vh;
+    width: 768px;
+    max-width: unset;
+
     }
 
-  #mic {
-    width: 1.5rem;
-    left: 22rem;
-  }
-
-  #mic-off {
+  #mic_off, #mic_on {
     width: 1.5rem;
     right: 1rem;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
 
   #kehlani-logo {
     width: 13.97625rem;
+    left: 16rem;
   }
 
   h2, .button {
@@ -191,13 +189,14 @@ footer {
   #portrait {
     width: 47.625rem;
     height: 48rem;
+    right: 2rem;
   }
 
   #www {
     width: 19.8125rem;
     height: 4.9375rem;
-    left: 18rem;
-    bottom: 4rem;
+    left: 17rem;
+    bottom: -14rem;
   }
   
   h3 {
@@ -208,30 +207,31 @@ footer {
     left: 32rem;
   }
 
+  footer {
+    position: static;
+  }
+
 }
 
 @media screen and (min-width: 80rem) {
 
   #wrapper {
     margin: auto;
-    max-width: 1280 px;
+    width: 1280px;
     }
 
-  #mic {
-    width: 2.0625rem;
-    left: 76.4rem;
+  header {
+    height: 4rem;
   }
 
-  #mic-off {
+  #mic_off, #mic_on {
     width: 2.0625rem;
-    right: 1rem;
-    margin-top: 1.6rem;
   }
 
   #portrait {
     width: 64.375rem;
     height: 64.875rem;
-    left: -2.5rem;
+    left: -3.5rem;
     /*! bottom: 12rem; */
   }
 
@@ -246,19 +246,15 @@ footer {
     width: 22.9525rem;
     height: 14.963125rem;
     position: absolute;
-    right: 3rem;
-    top: 14rem;
+    left: 53.5rem;
+    top: 10rem;
   }
 
   #www {
     width: 25.0625rem;
     height: 6.25rem;
-    left: 24rem;
-   bottom: 9rem;
-  }
-
-  .hidden {
-    display: none;
+    left: 22.4rem;
+   bottom: -29rem;
   }
 
   #text_container {
