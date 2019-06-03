@@ -18,3 +18,15 @@ function playSound () {
 }
 
 audioToggle.addEventListener('click',playSound,false);
+
+var button = document.getElementsByClassName("button");
+var site = document.getElementById("btn_site");
+var ticket = document.getElementById("btn_ticket")
+
+site.addEventListener('click', function(event) {
+    event.preventDefault();
+},false);
+
+ticket.addEventListener('click', function(event) {
+    event.preventDefault();
+},false);

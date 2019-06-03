@@ -88,6 +88,11 @@ main {
     width: 50vw;
     height: auto;
     margin: 0 auto;
+    animation: jello-horizontal 0.9s forwards;
+}
+
+#kehlani-logo:hover, #kehlani-logo:active {
+  animation: jello-horizontal 0.9s forwards;
 }
 
 #text_container {
@@ -103,7 +108,14 @@ main {
     padding: .2rem .5rem;
     margin-left: 1.5rem;
     margin-top: .5rem;
-    color: #37096F; 
+    color: #37096F;   
+    border: 1.5px solid white;
+    transition: background-color .2s linear;
+}
+
+.button:hover {
+  background-color: rgba(255,255,255,0);
+  color: white;
 }
 
 #portrait {
