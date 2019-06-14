@@ -1,0 +1,340 @@
+html {
+    font-size: 100%;
+    color: white;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9375rem;
+}
+
+h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: .75rem;
+}
+
+h2, .button {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+h3 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.625rem;
+    margin: .4rem .4rem;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*         CONTENT         */
+
+#wrapper {
+  margin: auto;
+  max-width: 320px;
+  overflow-x: hidden;
+  }
+
+  #img_container {
+    height: 477px;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(55,9,111);
+    background: linear-gradient(0deg, rgba(55,9,111,1) 0%, rgba(83,29,83,1) 49%, rgba(150,115,150,1) 100%);
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    margin: 0;
+    /* background-attachment: fixed; */
+}
+
+main {
+  position: relative;
+}
+
+#mic_off, #mic_on {
+  width: 1.2rem;
+  position: absolute;
+  right: .5rem;
+  margin-top: .5rem;
+}
+
+.hidden {
+  display: none ;
+}
+
+#kehlani-logo {
+    width: 50vw;
+    height: auto;
+    /* margin: 0 auto; */
+    animation: jello-horizontal 0.9s forwards;
+    left: 4.7rem;
+    position: relative;
+    top: 1rem;
+}
+
+#kehlani-logo:hover, #kehlani-logo:active {
+  animation: jello-horizontal 0.9s forwards;
+}
+
+#text_container {
+  display: flex;
+  margin: 0 auto;
+  width: 75vw;
+  flex-direction: column;
+}
+
+.button {
+    background-color: white;
+    border-radius: 3rem;
+    padding: .2rem .5rem;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+    color: #37096F;   
+    border: 1.5px solid white;
+    transition: background-color .2s linear;
+}
+
+.button:hover {
+  background-color: rgba(255,255,255,0);
+  color: white;
+}
+
+#portrait {
+  width: 473px;
+  height: 477px;
+  position: relative;
+  right: 4.5rem;
+}
+
+#www {
+  width: 180px;
+  height: 45px;
+  position: absolute;
+  z-index: 30;
+  bottom: 3rem;
+  right: 1rem;
+}
+
+footer {
+    background-color: #591D53;
+    width: 100%;
+    position: static;
+    /* bottom: 0; */
+    z-index: 40;
+}
+
+.right-aligned {
+  text-align: right;
+  left: 6.5rem;
+  position: relative;
+}
+
+@media screen and (min-width: 48rem) {
+
+  #wrapper {
+    min-height: 100vh;
+    width: 768px;
+    max-width: unset;
+
+    }
+
+  #mic_off, #mic_on {
+    width: 1.5rem;
+    right: 1rem;
+    margin-top: 1rem;
+  }
+
+  #kehlani-logo {
+    width: 13.97625rem;
+    left: 16rem;
+  }
+
+  h2, .button {
+    font-size: 1.25rem;
+  }
+
+  #button_container {
+    text-align: center;
+  }
+
+  .button {
+    padding: .4rem 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  a {
+    font-size: 1.25rem; 
+  }
+
+  #portrait {
+    width: 47.625rem;
+    height: 48rem;
+    right: 2rem;
+  }
+
+  #www {
+    width: 19.8125rem;
+    height: 4.9375rem;
+    left: 17rem;
+    bottom: -14rem;
+  }
+  
+  h3 {
+    font-size: .75rem;
+  }
+
+  .right-aligned {
+    left: 32rem;
+  }
+
+  footer {
+    position: static;
+  }
+
+}
+
+@media screen and (min-width: 80rem) {
+
+  #wrapper {
+    margin: auto;
+    width: 1280px;
+    }
+
+  header {
+    height: 4rem;
+  }
+
+  #mic_off, #mic_on {
+    width: 2.0625rem;
+  }
+
+  #portrait {
+    width: 64.375rem;
+    height: 64.875rem;
+    left: -3.5rem;
+    /*! bottom: 12rem; */
+  }
+
+  body {
+    display: block;
+    max-width: 80rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #kehlani-logo {
+    width: 22.9525rem;
+    height: 14.963125rem;
+    position: absolute;
+    left: 53.5rem;
+    top: 10rem;
+  }
+
+  #www {
+    width: 25.0625rem;
+    height: 6.25rem;
+    left: 22.4rem;
+   bottom: -29rem;
+  }
+
+  #text_container {
+    width: 22rem;
+    position: absolute;
+    right: 3rem;
+    top: 24rem;
+  }
+}
+
+/*   ANIMATIONS     */
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jello-horizontal {
+      0% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+      }
+      30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+      }
+      40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+      }
+      50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+      }
+      65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+      }
+      75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+      }
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+      }
+    }
+
+
+
+
+
