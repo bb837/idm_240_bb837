@@ -213,7 +213,10 @@ main {
   z-index: 30;
   bottom: 3rem;
   right: 1rem;
+  opacity: 0;
+  animation: puff-in-hor 03s cubic-bezier(0.470, 0.000, 0.745, 0.715) 3s both;
 }
+
 
 footer {
     background-color: #591D53;
@@ -538,6 +541,40 @@ footer {
                 transform: scale3d(1, 1, 1);
       }
     }
+
+    @-webkit-keyframes puff-in-hor {
+      0% {
+        -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5);
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes puff-in-hor {
+      0% {
+        -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5);
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    
 
 
 
