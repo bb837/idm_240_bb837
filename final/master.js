@@ -33,3 +33,24 @@ site.addEventListener('click', function(event) {
 ticket.addEventListener('click', function(event) {
     event.preventDefault();
 },false);
+
+
+
+var logo = document.getElementById("kehlani-logo");
+
+logo.addEventListener('mouseenter', () => {
+    console.log('hello');
+  if (logo.classList.contains("animation")) {
+    logo.classList.remove("animation");
+    logo.classList.add("animation");
+  }
+}, false);
+
+logo.addEventListener('touchstart', () => {
+    if (logo.classList.contains("animation")) {
+      logo.classList.remove("animation");
+      logo.classList.add("animation");
+    }
+  }, false);
+
+// Also duplicate the event listener and do 'touchstart' instead of 'mouseenter' for touch compatibility.

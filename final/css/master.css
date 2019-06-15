@@ -26,6 +26,7 @@ h2, .button {
     font-weight: 400;
     font-style: normal;
     font-size: 0.75rem;
+    cursor: pointer;
 }
 
 h3 {
@@ -75,6 +76,15 @@ main {
   position: absolute;
   right: .5rem;
   margin-top: .5rem;
+  cursor: pointer;
+}
+
+#audioToggle {
+  width: 1.2rem;
+  position: absolute;
+  right: .5rem;
+  margin-top: .5rem;
+  cursor: pointer;
 }
 
 .hidden {
@@ -82,24 +92,57 @@ main {
 }
 
 #kehlani-logo {
-    width: 50vw;
-    height: auto;
-    /* margin: 0 auto; */
-    animation: jello-horizontal 0.9s forwards;
-    left: 4.7rem;
-    position: relative;
-    top: 1rem;
+  width: 50vw;
+  height: auto;
+  /* margin: 0 auto; */
+  /* animation: jello-horizontal 0.9s normal; */
+  left: 4.7rem;
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+  z-index: 60;
 }
 
-#kehlani-logo:hover, #kehlani-logo:active {
-  animation: jello-horizontal 0.9s forwards;
+#kehlani-logo.animation  {
+  animation: jello-horizontal 0.9s normal;
 }
+/* #kehlani-logo:active  */
 
 #text_container {
   display: flex;
   margin: 0 auto;
   width: 75vw;
   flex-direction: column;
+}
+
+#smoke-group {
+  position: absolute;
+  width: 6rem;
+  bottom: 13.5rem;
+  z-index: 30;
+  left: 2rem;
+ }
+ 
+
+#pathA, #pathB, #pathC {
+  position: absolute;
+  width: 6rem;
+  z-index: 30;
+}
+
+#pathA {
+  left: 3.2rem;
+  bottom: 17rem;
+}
+
+#pathB {
+  bottom: 16rem;
+  left: 1.2rem;
+}
+
+#pathC {
+  bottom: 14rem;
+  left: 2rem;
 }
 
 .button {
@@ -147,6 +190,8 @@ footer {
   left: 6.5rem;
   position: relative;
 }
+
+
 
 @media screen and (min-width: 48rem) {
 
@@ -211,6 +256,35 @@ footer {
     position: static;
   }
 
+  #smoke-group {
+    width: 10rem;
+    /*! position: absolute; */
+    bottom: 5rem;
+    z-index: 30;
+    left: 9rem;
+  }
+
+  #pathA, #pathB, #pathC {
+    position: absolute;
+    width: 10rem;
+    z-index: 30;
+  }
+
+  #pathA {
+    left: 9.2rem;
+    bottom: 3rem;
+  }
+
+  #pathB {
+    bottom: 6rem;
+    left: 7.2rem;
+  }
+
+  #pathC {
+    bottom: 1rem;
+    left: 7rem;
+  }
+
 }
 
 @media screen and (min-width: 80rem) {
@@ -245,7 +319,7 @@ footer {
   #kehlani-logo {
     width: 22.9525rem;
     height: 14.963125rem;
-    position: absolute;
+    position: relative;
     left: 53.5rem;
     top: 10rem;
   }
@@ -263,9 +337,69 @@ footer {
     right: 3rem;
     top: 24rem;
   }
+
+  #smoke-group {
+    width: 14rem;
+    /*! position: absolute; */
+    bottom: -6rem;
+    left: 8rem;
+  }
+
+  #pathA, #pathB, #pathC {
+    position: absolute;
+    width: 12rem;
+    z-index: 30;
+  }
+
+  #pathA {
+    left: 14.2rem;
+    bottom: -2rem;
+  }
+
+  #pathB {
+    bottom: 6rem;
+    left: 7.2rem;
+  }
+
+  #pathC {
+    left: 11rem;
+  }
 }
 
 /*   ANIMATIONS     */
+
+#pathA {
+ animation: smoke 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+  }
+
+ #pathB {
+  animation: smoke 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+  animation-delay: 3s;
+ }
+
+ #pathC {
+  animation: smoke 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+  animation-delay: 6s;
+ }
+
+@keyframes smoke {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotateY(359deg);
+            transform: rotateY(359deg);
+            opacity: 1;
+  }
+}
 
 .jello-horizontal {
 	-webkit-animation: jello-horizontal 0.9s both;
